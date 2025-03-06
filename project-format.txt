@@ -1,0 +1,17 @@
+noisy-atom/
+├── assets/              # Static assets like images, PDFs, etc.
+│   ├── images/          # For logos, icons, etc.
+│   ├── docs/            # For PDFs or text files (e.g., tutorials)
+│   └── fonts/           # If you add custom fonts later
+├── css/                 # Stylesheets
+│   └── styles.css       # Main CSS file
+├── js/                  # JavaScript for interactivity
+│   └── scripts.js       # Placeholder for future scripts
+├── pages/               # HTML pages
+│   ├── index.html       # Home
+│   ├── topics.html      # Topics
+│   ├── tools.html       # Tools
+│   ├── blog.html        # Blog
+│   ├── about.html       # About
+│   └── contact.html     # Contact
+└── README.md            # Optional: Project documentation
