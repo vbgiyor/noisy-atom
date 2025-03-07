@@ -9,8 +9,10 @@
 <body>
     <header>
         <div class="company-container">
-            <img src="../assets/images/logo.png" alt="Noisy Atom Logo" class="logo">
-            <img src="../assets/images/name.png" alt="Noisy Atom Name" class="company-name">
+            <a href="/" class="company-link">
+                <img src="../assets/images/logo.png" alt="Noisy Atom Logo" class="logo">
+                <span class="company-name">Noisy Atom</span>
+            </a>
         </div>
         <nav>
             <ul>
@@ -28,7 +30,7 @@
         <section class="contact">
             <h1>Contact Us</h1>
             <p>Have questions or suggestions? Reach out!</p>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/f/moveanaj" method="POST">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -45,7 +47,7 @@
             </form>
         </section>
     </main>
-    
+
     <footer>
         <p>© 2025 <img src="../assets/images/name.png" alt="Noisy Atom Logo" class="footer-logo"> 
             <div>All rights reserved.</div> 
@@ -54,5 +56,6 @@
             <a href="../pages/about.html">About</a> | <a href="#">Privacy</a> | <a href="../pages/contact.html">Contact</a>
         </div>
     </footer>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
