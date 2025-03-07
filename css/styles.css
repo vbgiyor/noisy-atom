@@ -287,7 +287,7 @@ form button:hover {
 
 @font-face {
     font-family: 'Merriweather_36pt-Bold'; /* Give your font a name */
-    src: url('../assets/fonts/Merriweather/static/Merriweather_36pt-Bold.ttf') format('truetype'); /* Optional: for .ttf files */
+    src: url('./assets/fonts/Merriweather/static/Merriweather_36pt-Bold.ttf') format('truetype'); /* Optional: for .ttf files */
     font-display: swap;
   }
 
