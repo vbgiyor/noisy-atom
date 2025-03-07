@@ -1,11 +1,12 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: #1A1A1A;
-    color: #FFFFFF;
+    background: #FFFFFF; /* Changed from #1A1A1A to white */
+    color: #191970; /* Changed from #FFFFFF to Midnight Blue for readability */
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
@@ -13,20 +14,21 @@ html, body {
 }
 
 main {
-    flex-grow: 1; /* This makes the content take up available space */
+    flex-grow: 1;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333
+    background: #010131; /* Changed from #333 to Midnight Blue */
+    color: #FFFFFF; /* White text for contrast */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: #333;
+    background: #090929; /* Changed from #333 to Midnight Blue */
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -38,8 +40,8 @@ header {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
-    background: #FF6F61; /* Button color */
+    color: #FFFFFF;
+    background: #1E90FF; /* Changed from #FF6F61 to Dodger Blue */
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
@@ -48,8 +50,8 @@ header {
 }
 
 .tool a:hover {
-    background: #e65a50; /* Slightly darker on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background: #87CEEB; /* Changed to Sky Blue for hover */
+    transform: scale(1.05);
 }
 
 .topics a {
@@ -57,8 +59,8 @@ header {
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
-    background: #FF6F61; /* Button color */
+    color: #FFFFFF;
+    background: #1E90FF; /* Changed from #FF6F61 to Dodger Blue */
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
@@ -67,12 +69,12 @@ header {
 }
 
 .topics a:hover {
-    background: #e65a50; /* Slightly darker on hover */
-    transform: scale(1.05); /* Slight zoom effect */
+    background: #87CEEB; /* Changed to Sky Blue for hover */
+    transform: scale(1.05);
 }
 
 .logo img {
-    height: 40px; /* Adjust this to fit your logo */
+    height: 40px;
     width: auto;
     vertical-align: middle;
 }
@@ -84,40 +86,47 @@ nav ul {
 }
 
 nav a {
-    color: #FFFFFF;
+    color: #FFFFFF; /* Kept white for contrast on dark header */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #FF6F61;
+    color: #87CEEB; /* Changed from #FF6F61 to Sky Blue */
 }
 
-.hero, .topics, .tools, .blog, .about, .contact {
+.hero,
+.topics,
+.tools,
+.blog,
+.about,
+.contact {
     padding: 40px;
     text-align: center;
 }
 
 .hero {
-    background: #373a3a;
+    background: #F0F8FF; /* Changed from #373a3a to Alice Blue (light blue tint) */
 }
 
 .hero h1 {
     font-size: 48px;
     margin: 0;
     animation: fadeIn 0.1s ease-in;
+    color: #191970; /* Changed to Midnight Blue */
 }
 
 .hero p {
     font-size: 20px;
     animation: fadeIn 1s ease-in 0.1s;
     animation-fill-mode: both;
+    color: #191970; /* Changed to Midnight Blue */
 }
 
 .hero button {
     padding: 10px 20px;
     font-size: 18px;
-    background: #FF6F61;
+    background: #1E90FF; /* Changed from #FF6F61 to Dodger Blue */
     border: none;
     color: #FFFFFF;
     cursor: pointer;
@@ -129,52 +138,53 @@ nav a:hover {
 
 .hero button:hover {
     transform: scale(1.05);
-    background: #e65a50;
+    background: #87CEEB; /* Changed to Sky Blue */
 }
 
-.grid, .carousel {
+.grid,
+.carousel {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
     align-items: stretch;
-    
 }
 
 .card {
-    background: #333;
+    background: #B0C4DE; /* Changed from #333 to Light Steel Blue */
     padding: 20px;
-    width: 200px; /* Adjust width if needed */
+    width: 200px;
     text-align: center;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Pushes content and button apart */
-    height: 100%; /* Ensures equal height */
+    justify-content: space-between;
+    height: 100%;
     position: relative;
     flex-grow: 1;
     min-height: 1px;
+    color: #191970; /* Changed text color to Midnight Blue */
 }
 
 .card p {
-    flex-grow: 1; /* Allows the paragraph to fill the space */
+    flex-grow: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
     line-height: 1.5em;
-    max-height: 3em; /* Ensures only 2 lines */
-    min-height: 3em; /* Prevents shorter text from shrinking the card */
+    max-height: 3em;
+    min-height: 3em;
 }
 
 .card:hover {
-    background: #FF6F61;
-    transform: scale(1.1); /* Increase size slightly */
+    background: #87CEEB; /* Changed from #FF6F61 to Sky Blue */
+    transform: scale(1.1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    z-index: 10; /* Ensures the hovered card is above the others */
+    z-index: 10;
 }
 
 form {
@@ -186,15 +196,17 @@ form {
 form label {
     display: block;
     margin: 10px 0 5px;
+    color: #191970; /* Changed to Midnight Blue */
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     max-width: 300px;
     padding: 8px;
-    background: #333;
-    border: none;
-    color: #FFFFFF;
+    background: #F0F8FF; /* Changed to Alice Blue */
+    border: 1px solid #B0C4DE; /* Light Steel Blue border */
+    color: #191970; /* Midnight Blue text */
     border-radius: 4px;
 }
 
@@ -205,7 +217,7 @@ form textarea {
 form button {
     margin-top: 10px;
     padding: 10px 20px;
-    background: #FF6F61;
+    background: #1E90FF; /* Changed from #FF6F61 to Dodger Blue */
     border: none;
     color: #FFFFFF;
     cursor: pointer;
@@ -215,11 +227,11 @@ form button {
 
 form button:hover {
     transform: scale(1.05);
-    background: #e65a50;
+    background: #87CEEB; /* Changed to Sky Blue */
 }
 
 .footer-logo {
-    height: 100px; /* Smaller size for footer */
+    height: 100px;
     width: auto;
     vertical-align: middle;
 }
@@ -232,7 +244,7 @@ form button:hover {
 }
 
 .footer-links a:hover {
-    color: #FF6F61;
+    color: #87CEEB; /* Changed from #FF6F61 to Sky Blue */
 }
 
 @keyframes fadeIn {
@@ -242,17 +254,144 @@ form button:hover {
 
 .company-container {
     display: flex;
-    align-items: center; /* Vertically aligns the logo and name */
-    gap: 20px; /* Space between the logo and the company name */
-  }
-  
-  .logo {
-    width: auto; /* Adjust logo size */
-    height: 30px; /* Maintain aspect ratio */
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: auto;
+    height: 30px;
     vertical-align: middle;
-  }
-  
-  .company-name {
-    width: auto; /* Adjusts based on the image size */
-    height: 160px; /* Maintain aspect ratio */
-  }
+}
+
+.company-name {
+    width: auto;
+    height: 160px;
+}
+
+.contact {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #191970; /* Changed to Midnight Blue */
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #191970; /* Changed from #cccccc to Midnight Blue */
+}
+
+.contact-form {
+    background: #F0F8FF; /* Changed from #252525 to Alice Blue */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #191970; /* Changed to Midnight Blue */
+    font-size: 14px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 15px;
+    background: #FFFFFF; /* Changed to white */
+    border: 1px solid #B0C4DE; /* Light Steel Blue border */
+    color: #191970;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #1E90FF; /* Changed to Dodger Blue */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #B0C4DE; /* Light Steel Blue */
+    opacity: 1;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+    min-height: 80px;
+    max-height: 200px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: #1E90FF; /* Changed from #FF6F61 to Dodger Blue */
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #87CEEB; /* Changed to Sky Blue */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 15px;
+    }
+    .contact-form {
+        padding: 20px;
+    }
+    .contact h1 {
+        font-size: 28px;
+    }
+    .contact p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+    .submit-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
