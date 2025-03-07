@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 .card {
-    background: #B0C4DE; /* Changed from #333 to Light Steel Blue */
+    background: #F0F8FF; /* Changed from #333 to Light Steel Blue */
     padding: 20px;
     width: 200px;
     text-align: center;
@@ -256,6 +256,8 @@ form button:hover {
     display: flex;
     align-items: center;
     gap: 20px;
+    font: 100;
+    color: #FFFFFF;
 }
 
 .logo {
@@ -264,10 +266,30 @@ form button:hover {
     vertical-align: middle;
 }
 
-.company-name {
-    width: auto;
-    height: 160px;
+.company-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Removes underline from link */
 }
+
+.company-name {
+    font-family: 'Merriweather_36pt-Bold', sans-serif;
+    color: #F0F8FF; /* Light text color (like Alice Blue) */
+    font-size: 24px; /* Adjust font size */
+    text-align: center; /* Horizontal alignment */
+    line-height: 30px; /* Vertically align with logo based on the logo's height */
+    margin-left: 10px;; /* Remove any default margins */
+    padding: 0; /* Remove any padding */
+    display: inline-block; /* Ensure it stays inline with the logo */
+    vertical-align: middle; /* Vertically align with the logo */
+}
+
+
+@font-face {
+    font-family: 'Merriweather_36pt-Bold'; /* Give your font a name */
+    src: url('/assets/fonts/Merriweather/static/Merriweather_36pt-Bold.ttf') format('truetype'); /* Optional: for .ttf files */
+    font-display: swap;
+  }
 
 .contact {
     padding: 60px 20px;
@@ -395,3 +417,4 @@ form textarea {
         padding: 10px 15px;
     }
 }
+
